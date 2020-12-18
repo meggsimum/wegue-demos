@@ -36,13 +36,13 @@ npm install \
 ```
 
 Run development server:
-```
+```shell
 npm run dev \
   --prefix ./wegue
 ```
 
 Build the wegue app:
-```
+```shell
 npm run build \
   --prefix ./wegue
 ```
