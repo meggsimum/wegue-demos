@@ -1,0 +1,95 @@
+{
+
+    "title": "Global data",
+  
+    "baseColor": "blue",
+  
+    "logo": "./static/img/meggsimum_logo.png",
+    "logoWidth": "100",
+    "logoHeight": "100",
+  
+    "footerTextLeft": "Powered by <a href='https://meggsimum.de/wegue/' target='_blank'>Wegue WebGIS</a>",
+    "footerTextRight": "meggsimum",
+    "showCopyrightYear": true,
+  
+    "mapZoom": 3,
+    "mapCenter": [0, 0],
+    
+    "mapLayers": [
+      {
+        "type": "VECTOR",
+        "lid": "places",
+        "name": "Places",
+        "url": "./static/data/places.json",
+        "selectable": true,
+        "format": "GeoJSON",
+        "visible": true,
+        "style": {
+          "radius": 4,
+          "strokeColor": "purple",
+          "strokeWidth": 2,
+          "fillColor": "rgba(155,153,51,0.5)"
+        },
+        "attributions": "<a href='https://www.naturalearthdata.com' target='_blank'>Natural Earth</a>"
+      },
+      {
+        "type": "VECTOR",
+        "lid": "timezones",
+        "name": "Timezones",
+        "url": "./static/data/timezones.json",
+        "selectable": true,
+        "format": "GeoJSON",
+        "visible": true,
+        "style": {
+          "strokeColor": "black",
+          "strokeWidth": 2
+        },
+        "attributions": "<a href='https://www.naturalearthdata.com' target='_blank'>Natural Earth</a>"
+      },
+      {
+        "type": "VECTOR",
+        "lid": "countries",
+        "name": "Countries",
+        "url": "./static/data/countries.json",
+        "format": "GeoJSON",
+        "visible": true,
+        "style": {
+          "strokeColor": "gray",
+          "strokeWidth": 1,
+          "fillColor": "rgba(20,20,20,0.1)"
+        },
+        "attributions": "<a href='https://www.naturalearthdata.com' target='_blank'>Natural Earth</a>"
+      },
+      {
+        "type": "XYZ",
+        "name": "Carto Positron",
+        "url": "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+        "lid": "positron",
+        "displayInLayerList": true,
+        "visible": true,
+        "attributions": "© <a href='https://carto.com/attribution/' target='_blank'>CARTO</a> | <a href='https://openstreetmap.org/copyright' target='_blank'>© OpenStreetMap</a>-contributors | "
+      }
+    ],
+  
+    "modules": {
+      "wgu-layerlist": {
+        "target": "menu",
+        "win": true,
+        "draggable": false
+      },
+      "wgu-infoclick": {
+        "target": "menu",
+        "win": true,
+        "draggable": false,
+        "initPos": {
+          "left": 8,
+          "top": 74
+        }
+      },
+      "wgu-zoomtomaxextent": {
+        "target": "toolbar",
+        "darkLayout": true
+      }
+    }
+  }
+  
