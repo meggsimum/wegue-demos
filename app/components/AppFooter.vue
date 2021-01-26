@@ -26,5 +26,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
+.wgu-footer-left >>> a {
+   color: inherit
+}
 </style>
