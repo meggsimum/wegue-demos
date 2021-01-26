@@ -8,7 +8,7 @@
     "logoWidth": "100",
     "logoHeight": "100",
   
-    "footerTextLeft": "Powered by <a href='https://meggsimum.de/wegue/' target='_blank'>Wegue WebGIS</a>",
+    "footerTextLeft": "Powered by <a href='https://meggsimum.de/wegue/' target='_blank'>Wegue WebGIS</a> - Sourcecode available on <a href='https://github.com/meggsimum/wegue-demos'>GitHub</a>",
     "footerTextRight": "meggsimum",
     "showCopyrightYear": true,
   
