@@ -1,6 +1,16 @@
 # Wegue Demo Applications
 
-This repository contains demo applications based on [Wegue](https://www.github.com/meggsimum/wegue).
+This repository contains demo configurations for [Wegue](https://www.github.com/meggsimum/wegue).
+
+## Usage
+
+Clone Wegue:
+
+```shell
+git clone https://github.com/meggsimum/wegue
+```
+
+Add the `app` directory of `wegue-demos` (this repository) to your `wegue` directory. 
 
 ## Demo: Global Data
 
