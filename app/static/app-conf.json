@@ -1,0 +1,106 @@
+{
+  "colorTheme": {
+    "dark": false,
+    "themes": {
+      "light": {
+        "primary": "#55aaff"
+      }
+    }
+  },
+  "logo": "./static/img/meggsimum_logo.png",
+  "logoWidth": "100",
+  "logoHeight": "100",
+  "showCopyrightYear": true,
+  "mapZoom": 3,
+  "mapCenter": [
+    0,
+    0
+  ],
+  "mapLayers": [
+    {
+      "type": "VECTOR",
+      "lid": "places",
+      "name": "Places",
+      "url": "./static/data/places.json",
+      "selectable": true,
+      "format": "GeoJSON",
+      "visible": true,
+      "style": {
+        "radius": 4,
+        "strokeColor": "purple",
+        "strokeWidth": 2,
+        "fillColor": "rgba(155,153,51,0.5)",
+        "label": {
+          "attribute": "NAME",
+          "minResolution": 10000.0,
+          "outlineColor": "white",
+          "outlineWidth": 2,
+          "fillColor": "black",
+          "offsetX": 0,
+          "offsetY": 15,
+          "align": "center"
+        }
+      },
+      "attributions": "<a href='https://www.naturalearthdata.com' target='_blank'>Natural Earth</a>"
+    },
+    {
+      "type": "VECTOR",
+      "lid": "timezones",
+      "name": "Timezones",
+      "url": "./static/data/timezones.json",
+      "selectable": true,
+      "format": "GeoJSON",
+      "visible": true,
+      "style": {
+        "strokeColor": "black",
+        "strokeWidth": 2
+      },
+      "attributions": "<a href='https://www.naturalearthdata.com' target='_blank'>Natural Earth</a>"
+    },
+    {
+      "type": "VECTOR",
+      "lid": "countries",
+      "name": "Countries",
+      "url": "./static/data/countries.json",
+      "format": "GeoJSON",
+      "visible": true,
+      "style": {
+        "strokeColor": "gray",
+        "strokeWidth": 1,
+        "fillColor": "rgba(20,20,20,0.1)"
+      },
+      "attributions": "<a href='https://www.naturalearthdata.com' target='_blank'>Natural Earth</a>"
+    },
+    {
+      "type": "XYZ",
+      "name": "Carto Positron",
+      "url": "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+      "lid": "positron",
+      "displayInLayerList": true,
+      "isBaseLayer": true,
+      "attributions": "© <a href='https://carto.com/attribution/' target='_blank'>CARTO</a> | <a href='https://openstreetmap.org/copyright' target='_blank'>© OpenStreetMap</a>-contributors | "
+    }
+  ],
+  "modules": {
+    "wgu-layerlist": {
+      "target": "toolbar",
+      "win": true,
+      "draggable": false,
+      "icon": "layers"
+    },
+    "wgu-infoclick": {
+      "icon": "info",
+      "target": "toolbar",
+      "win": true,
+      "draggable": false,
+      "initPos": {
+        "left": 8,
+        "top": 74
+      }
+    },
+    "wgu-zoomtomaxextent": {
+      "target": "toolbar",
+      "darkLayout": true
+    }
+  }
+}

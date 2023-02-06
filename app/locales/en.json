@@ -1,0 +1,8 @@
+{
+  "app": {
+    "title": "Global data",
+    "footerTextLeft": "Powered by <a href='https://meggsimum.de/wegue/' target='_blank'>Wegue WebGIS</a>",
+    "footerTextRight": "meggsimum",
+    "logo": "App Logo"
+  }
+}
